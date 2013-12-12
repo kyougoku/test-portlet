@@ -24,7 +24,7 @@
         <security-ref parent="user-view"/>
         <meta-info>
             <title>Test</title>
-            <description>テストポートレットです。</description>
+            <description>インターン課題タスク</description>
         </meta-info>
         <classname>org.apache.jetspeed.portal.portlets.VelocityPortlet</classname>
         <parameter name="template" value="test" hidden="true" cachedOnName="true" cachedOnValue="true"/>
