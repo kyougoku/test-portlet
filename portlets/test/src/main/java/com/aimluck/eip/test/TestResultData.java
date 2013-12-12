@@ -64,7 +64,7 @@ public class TestResultData implements ALData {
   /** 締切日 */
 //  private ALStringField end_date;
 
-  /** メモ */
+  /** 内容 */
   private ALStringField note;
 
   /** 公開/非公開フラグ */

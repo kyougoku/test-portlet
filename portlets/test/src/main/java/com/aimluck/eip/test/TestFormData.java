@@ -91,7 +91,7 @@ public class TestFormData extends ALAbstractFormData {
   /** 状態 */
 //  private ALNumberField state;
 
-  /** メモ */
+  /** 内容 */
   private ALStringField note;
 
   /** 開始日 */
@@ -115,7 +115,7 @@ public class TestFormData extends ALAbstractFormData {
   /** カテゴリ名 */
 //  private ALStringField category_name;
 
-  /** */
+  /** 内容 */
 //  private boolean is_new_category;
 
   /** 公開/非公開フラグ */
@@ -218,9 +218,9 @@ public class TestFormData extends ALAbstractFormData {
     // 状態
 //    state = new ALNumberField();
 //    state.setFieldName(ALLocalizationUtils.getl10n("TODO_SETFIELDNAME_STATE"));
-    // メモ
+    // 内容
     note = new ALStringField();
-    note.setFieldName(ALLocalizationUtils.getl10n("TODO_SETFIELDNAME_MEMO"));
+    note.setFieldName("内容");
     note.setTrim(false);
     // 開始日
 //    start_date = new ALDateField();
@@ -281,7 +281,7 @@ public class TestFormData extends ALAbstractFormData {
     test_name.setNotNull(true);
     // タイトルの文字数制限
     test_name.limitMaxLength(50);
-    // メモの文字数制限
+    // 内容の文字数制限
     note.limitMaxLength(1000);
 //    if (is_new_category) {
 //      // カテゴリ名必須項目
@@ -358,7 +358,7 @@ public class TestFormData extends ALAbstractFormData {
 //        }
 //      }
 //    }
-    // メモ
+    // 内容
     note.validate(msgList);
 //    if (is_new_category) {
 //      // カテゴリ名
@@ -412,7 +412,7 @@ public class TestFormData extends ALAbstractFormData {
 //      state.setValue(test.getState().longValue());
       // 優先度
 //      priority.setValue(test.getPriority().longValue());
-      // メモ
+      // 内容
       note.setValue(test.getNote());
       // 公開区分
 //      public_flag.setValue(test.getPublicFlag());
@@ -521,7 +521,7 @@ public class TestFormData extends ALAbstractFormData {
 //      test.setState(Short.valueOf((short) state.getValue()));
       // 優先度
 //      test.setPriority(Short.valueOf((short) priority.getValue()));
-      // メモ
+      // 内容
       test.setNote(note.getValue());
       // 公開区分
 //      test.setPublicFlag(public_flag.getValue());
@@ -722,7 +722,7 @@ public class TestFormData extends ALAbstractFormData {
 //      test.setState(Short.valueOf((short) state.getValue()));
       // 優先度
 //      test.setPriority(Short.valueOf((short) priority.getValue()));
-      // メモ
+      // 内容
       test.setNote(note.getValue());
       // 公開区分
 //      test.setPublicFlag(public_flag.getValue());
@@ -833,7 +833,7 @@ public class TestFormData extends ALAbstractFormData {
 //  }
 
   /**
-   * メモを取得します。 <BR>
+   * 内容を取得します。 <BR>
    *
    * @return
    */

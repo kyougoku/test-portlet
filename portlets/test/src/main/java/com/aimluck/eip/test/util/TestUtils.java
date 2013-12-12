@@ -729,7 +729,7 @@ public class TestUtils {
 //      TestUtils.getPriorityString(test.getPriority())).append(CR);
 //
 //    if (test.getNote().toString().length() > 0) {
-//      body.append("[メモ]").append(CR).append(test.getNote().toString()).append(
+//      body.append("[内容]").append(CR).append(test.getNote().toString()).append(
 //        CR);
 //    }
 //    body.append(CR);
